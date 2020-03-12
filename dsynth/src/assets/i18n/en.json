@@ -1,5 +1,7 @@
 {
     "nav": {
+        "title": "dsynth.net",
+        "lang_select": "Language",
         "test": "Hello"
     }
 }

@@ -1,14 +1,15 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 import {TranslateService} from "@ngx-translate/core";
+import {Router} from "@angular/router";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: []
+    selector: "app-root",
+    templateUrl: "./app.component.html",
+    styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
 
-    constructor(private translate: TranslateService) {
+    constructor(private translate: TranslateService, public router: Router) {
 
         translate.addLangs([
             'en',
@@ -20,8 +21,8 @@ export class AppComponent {
     }
 
     langList: any[] = [
-        {lang: 'fr', display: 'Français'},
         {lang: 'en', display: 'English'},
+        {lang: 'fr', display: 'Français'},
         {lang: 'ru', display: 'Русский'},
     ];
 
