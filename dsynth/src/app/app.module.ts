@@ -13,6 +13,7 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { ContactComponent } from './contact/contact.component';
 import {MatCardModule} from "@angular/material/card";
+import { AboutComponent } from './about/about.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,7 +22,8 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
     declarations: [
         AppComponent,
-        ContactComponent
+        ContactComponent,
+        AboutComponent
     ],
     imports: [
         BrowserModule,
